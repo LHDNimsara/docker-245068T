@@ -1,0 +1,10 @@
+__pychache__
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+venv/
+.env
+proofs/
+README.md
