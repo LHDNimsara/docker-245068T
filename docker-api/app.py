@@ -10,5 +10,9 @@ def get_data():
         "message": "Docker API container running successfully!"
     })
 
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "ok"})
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
